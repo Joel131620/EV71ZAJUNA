@@ -1,0 +1,266 @@
+/* Estilos generales para html y body */
+html,
+body {
+    position: relative; /* Permite posicionar elementos relativos a html o body */
+    height: 100%; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Estilos básicos del body */
+body {
+    background-color: #2a223a; /* Color de fondo del body */
+    font-family: Helvetica Neue, Helvetica; /* Tipografía base */
+    font-size: 14px; /* Tamaño de fuente base */
+    color: #000; /* Color de texto base */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+}
+
+/* Importa la fuente Lora desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Estilos para todos los elementos */
+* {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    list-style: none; /* Elimina puntos de las listas */
+}
+
+/* Estilos para el body */
+body {
+    font-family: 'Lora', sans-serif; /* Tipografía base */
+    background-color: #1b1726; /* Color de fondo del body */
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%; /* Asegura que las imágenes no se desborden del contenedor */
+}
+
+/* Contenedor principal con ancho máximo y centrado */
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-image: url(imagenes/FONDOPRO.jpg); /* Imagen de fondo del encabezado */
+    background-position: center; /* Posiciona la imagen en el centro */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Hace que la imagen cubra todo el área del encabezado */
+    display: flex; /* Usa flexbox para el diseño */
+    align-items: center; /* Centra verticalmente los elementos */
+    min-height: 80vh; /* Altura mínima del encabezado */
+    padding: 80px 0; /* Padding superior e inferior */
+}
+
+/* Estilos para el menú en el encabezado */
+.menu {
+    position: absolute; /* Posiciona el menú de manera absoluta */
+    top: 0; /* Posición superior del menú */
+    left: 0; /* Posición izquierda del menú */
+    right: 0; /* Posición derecha del menú */
+    display: flex; /* Usa flexbox para el diseño */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia los elementos de manera equitativa */
+}
+
+/* Estilos para el logo del menú */
+.logo {
+    color: #ff5a2c; /* Color del texto del logo */
+    font-size: 25px; /* Tamaño de fuente del logo */
+    font-weight: 800; /* Peso de la fuente del logo */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+
+/* Estilos para los elementos del menú de navegación */
+.menu .navbar ul li {
+    position: relative; /* Posición relativa para elementos internos */
+    float: left; /* Flota los elementos a la izquierda */
+}
+
+/* Estilos para los enlaces en el menú de navegación */
+.menu .navbar ul li a {
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    padding: 20px; /* Padding alrededor del texto */
+    color: #ffffff; /* Color del texto */
+    font-weight: 600; /* Peso de la fuente */
+    display: block; /* Hace que el enlace sea un bloque */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilo para el efecto hover en los enlaces del menú */
+.menu .navbar ul li a:hover {
+    color: #ff5a2c; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Oculta el checkbox del menú para dispositivos móviles */
+#menu {
+    display: none;
+}
+
+/* Estilo para el ícono del menú */
+.menu-icono {
+    width: 25px; /* Ancho del ícono del menú */
+}
+
+/* Estilos para la etiqueta del menú en dispositivos móviles */
+.menu label {
+    cursor: pointer; /* Cambia el cursor al pasar sobre la etiqueta */
+    display: none; /* Oculta la etiqueta por defecto */
+}
+
+/* Estilos para el contenido del encabezado */
+.header-content {
+    display: flex; /* Usa flexbox para el diseño */
+}
+
+/* Estilos para el texto del encabezado */
+.header-txt {
+    flex-basis: 50%; /* Ocupa la mitad del espacio del contenedor */
+}
+
+/* Estilos para el título del encabezado */
+.header-txt h1 {
+    font-size: 60px; /* Tamaño de fuente del título */
+    color: #ffffff; /* Color del texto */
+    line-height: 1.3; /* Altura de línea del título */
+    margin-bottom: 25px; /* Margen inferior */
+}
+
+/* Estilo para el texto resaltado en el encabezado */
+.header-txt span {
+    color: #ff5a2c; /* Color del texto resaltado */
+}
+
+/* Estilos para los párrafos en el encabezado */
+.header-txt p {
+    font-size: 17px; /* Tamaño de fuente del párrafo */
+    color: #e0e0e0; /* Color del texto */
+    margin-bottom: 45px; /* Margen inferior */
+}
+
+/* Estilos para los botones en el encabezado */
+.butons {
+    display: flex; /* Usa flexbox para el diseño */
+}
+
+/* Estilos para los botones principales */
+.btn-1, .btn-2, .btn-3 {
+    display: inline-block; /* Muestra los botones en línea */
+    padding: 11px 35px; /* Padding dentro del botón */
+    border: 2px solid #ff5a2c; /* Borde del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    margin-right: 25px; /* Margen derecho */
+    font-size: 17px; /* Tamaño de fuente del botón */
+    color: #ffffff; /* Color del texto del botón */
+}
+
+/* Estilo para el efecto hover en el primer botón */
+.btn-1:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para la sección popular */
+.popular {
+    padding: 100px; /* Padding alrededor de la sección */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos para los títulos en la sección popular */
+h2 {
+    color: #ffffff; /* Color del texto */
+    font-size: 35px; /* Tamaño de fuente del título */
+    margin-bottom: 45px; /* Margen inferior */
+}
+
+/* Estilos para el slider Swiper */
+.swiper {
+    width: 100%; /* Ancho completo del slider */
+    padding: 150px 0 50px 0; /* Padding superior e inferior */
+}
+
+/* Estilos para las diapositivas del slider */
+.swiper-slide {
+    width: 300px; /* Ancho de cada diapositiva */
+    height: 500px; /* Altura de cada diapositiva */
+    background-color: #3f3456; /* Color de fondo de la diapositiva */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Sombra de la diapositiva */
+    padding: 40px; /* Padding dentro de la diapositiva */
+    text-align: center; /* Centra el texto dentro de la diapositiva */
+}
+
+/* Estilos para los íconos en la sección popular */
+.icons {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: space-between; /* Espacia los íconos equitativamente */
+    align-items: center; /* Centra verticalmente los íconos */
+    margin-bottom: 40px; /* Margen inferior */
+}
+
+/* Estilos para los íconos individuales */
+.icons i {
+    font-size: 20px; /* Tamaño de fuente del ícono */
+    color: #ff5a2c; /* Color del ícono */
+}
+
+/* Estilos para las imágenes en la sección popular */
+.icons img {
+    width: 145px; /* Ancho de las imágenes */
+}
+
+/* Estilos para los productos */
+.Product {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: space-between; /* Espacia los productos equitativamente */
+}
+
+/* Estilos para el texto de los productos */
+.Product-txt {
+    flex-basis: 50%; /* Ocupa la mitad del espacio del contenedor */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para el precio en el texto del producto */
+.Product-txt span {
+    font-size: 25px; /* Tamaño de fuente del precio */
+    color: #ff5a2c; /* Color del precio */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilos para el título del producto */
+.Product-txt h3 {
+    font-size: 20px; /* Tamaño de fuente del título */
+    color: #ff5a2c; /* Color del título */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+
+/* Estilos para la descripción del producto */
+.Product-txt p {
+    font-size: 14px; /* Tamaño de fuente de la descripción */
+    color: #c4c4c4; /* Color de la descripción */
+}
+
+/* Estilos para la imagen del producto */
+.Product-img {
+    flex-basis: 50%; /* Ocupa la mitad del espacio del contenedor */
+    text-align: right; /* Alinea la imagen a la derecha */
+}
+
+/* Estilos para las imágenes de los productos */
+.Product-img img {
+    width: 150px; /* Ancho de la imagen del producto */
+}
+
+/* Estilos para el primer botón (btn-1) */
+.btn-1 {
+    display: inline-block; /* Muestra el botón en línea */
+    padding: 13px 55px; /* Padding dentro del botón */
+    border: 1px solid #ff5a2c; /* Borde del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    color: #ff5a2c; /* Color del texto del botón */
+    text-decoration: none; /* Elimina subrayado del enlace */
+    margin-top: 50px; /* Margen superior */
+}

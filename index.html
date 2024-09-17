@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta información del documento -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUITAR TRIVIAL</title>
+
+    <!-- Enlaces a los archivos CSS externos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="visual.css">
+</head>
+<body>
+    <!-- Cabecera de la página -->
+    <header>
+        <div class="menu container">
+            <!-- Logo del sitio -->
+            <img class="logo-1" src="imag/logo5.jpg" alt="Logo del sitio">
+
+            <!-- Menú hamburguesa para dispositivos móviles -->
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imag/guitar9.webp" class="menu-icono" alt="Ícono del menú">
+            </label>
+
+            <!-- Barra de navegación -->
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="productos.html">HORROR GAMES</a></li>
+                        <li><a href="screen.html">Inicio</a></li>
+                        <li><a href="#">Carrito</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="imag/logo6.jpg" alt="">
+
+                <!-- Menú secundario y redes sociales -->
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Tips</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/f" alt="Icono social">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imag/s2.svg" alt="Icono social">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imag/s3.svg" alt="Icono social">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Contenido principal del encabezado con el slider -->
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <!-- Cada diapositiva del slider -->
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Guitarras</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                   Provident iusto dolore, minima totam officiis esse maiores 
+                                   corrupti dolorem ducimus. Eaque ab quos dignissimos repellat 
+                                   dolorem possimus officiis atque voluptatibus iusto.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menu</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="imag/guitar2.webp" alt="Guitarra">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Más diapositivas aquí... -->
+                </div>
+                <!-- Controles del slider -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de productos con tabs -->
+    <main class="products">
+        <div class="tabs container">
+            <!-- Tabs para cambiar entre categorías -->
+            <input type="radio" name="tabs" id="tab1" class="tabInput" value="1" checked>
+            <label for="tab1">Guitarra</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <!-- Productos en la categoría de guitarras -->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="imag/guitar3.webp" alt="Guitarra nueva">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Ilimitado</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">$2.750.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Más productos aquí... -->
+                    </div>
+                    <!-- Controles del slider de productos -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!-- Más tabs para otras categorías... -->
+        </div>
+    </main>
+
+    <!-- Sección de información adicional -->
+    <section class="info container">
+        <div class="info-img">
+            <img src="imag/guitar6-removebg-preview.png" alt="Información">
+        </div>
+        <div class="info-txt">
+            <h2>Información</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis eum corrupti 
+                quasi quisquam ipsam ut quibusdam laboriosam fugit nisi! Beatae neque sapiente 
+                alias optio deserunt provident sint molestias soluta? Quod!
+            </p>
+            <a href="#" class="btn-2">Más información</a>
+        </div>
+    </section>
+
+    <!-- Sección de horario y contacto -->
+    <section class="horario">
+        <div class="horario-info container">
+            <h2>Horario</h2>
+            <div class="horario-txt">
+                <!-- Información de contacto -->
+                <div class="txt">
+                    <h4>Dirección</h4>
+                    <p>adipisicing elit</p>
+                    <p>Corporis eum corrupti</p>
+                </div>
+                <div class="txt">
+                    <h4>Horario</h4>
+                    <p>24/7 en honor a Eddie Van Halen</p>
+                    <p>Y también para ti rockero</p>
+                </div>
+                <div class="txt">
+                    <h4>Teléfono</h4>
+                    <p>Para contactarse con un asesor rockero 353 8808</p>
+                    <p>Para validar o algún EA (Evento adverso) 227 7447</p>
+                </div>
+                <div class="txt">
+                    <h4>Redes</h4>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="imag/s1.svg" alt="Red social">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imag/s2.svg" alt="Red social">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imag/s3.svg" alt="Red social">
+                            </div>
+                        </a>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del mapa de ubicación -->
+    <section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7005331800824!2d-74.10449382440957!3d4.64740394211601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b954c7ea505%3A0xd28c94814b1d1633!2sCentro%20Comercial%20Gran%20Estaci%C3%B3n!5e0!3m2!1sen!2sco!4v1721004757962!5m2!1sen!2sco" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer container">
+        <img class="logo-2" src="imag/logo5.jpg" alt="Logo del pie de página">
+        <div class="links">
+            <h4>Lorem</h4>
+            <ul>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Lorem</h4>
+            <ul>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Lorem</h4>
+            <ul>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Enlaces a archivos JavaScript externos -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="visual.js"></script>
+    <script>
+        // Inicialización del slider principal
+        var swiper1 = new Swiper(".mySwiper-1", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // Inicialización del slider de productos
+        var swiper2 = new Swiper(".mySwiper-2", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición de la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Configuración para que el diseño sea responsivo en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>productos</title>
+    <!-- Enlace a la hoja de estilos de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Enlace a la hoja de estilos de Swiper.js para el carrusel de imágenes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Enlace a la hoja de estilos personalizada para esta página -->
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header class="header">
+        <div class="menu container">
+            <!-- Logo del sitio web -->
+            <a href="#" class="logo">logo</a>
+            <!-- Checkbox para controlar el menú desplegable en dispositivos móviles -->
+            <input type="checkbox" id="menu"/>
+            <!-- Etiqueta para el menú con icono -->
+            <label for="menu">
+                <img src="imagenes/FONDOPRO.jpg" class="menu-icono" alt="menu">
+            </label>
+            <!-- Navegación principal -->
+            <nav class="navbar">
+                <ul>
+                    <!-- Enlaces de navegación -->
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="index.html">Productos</a></li>
+                    <li><a href="screen.html">Inicio</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>  
+            </nav>
+        </div>
+
+        <!-- Contenido principal del encabezado -->
+        <div class="header-content container">
+            <div class="header-txt">
+                <!-- Título principal con un texto destacado -->
+                <h1> Compra tu <span>horror game</span> <br> favorito </h1>
+                <!-- Descripción breve -->
+                <p>
+                    Hola gamer te damos las bienvenida a nuestro hogar en donde encontraras los mejores juegos de horror
+                    hasta el momento, tanto algunos clasicos como los que se encuentran en tendencia solo para que experimentes
+                    el temor a su maximo esplendor.
+                </p>
+                <!-- Botones de acción -->
+                <div class="butons">
+                    <a href="#" class="btn-1">Informacion</a>
+                    <a href="#" class="btn-1">HORROR GAMES</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrusel de productos utilizando Swiper.js -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Cada diapositiva del carrusel -->
+            <div class="swiper-slide">
+                <div class="icons">
+                    <!-- Iconos para la navegación y favoritos -->
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="imagenes/logogd.webp" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="Product-content">
+                    <div class="Product-txt">
+                        <!-- Precio del producto -->
+                        <span>$120.000</span>
+                        <!-- Título del producto -->
+                        <h3>Jack single</h3>
+                        <!-- Descripción del producto -->
+                        <p>Dead Space es un videojuego de disparos en tercera persona 
+                            perteneciente al subgénero de terror y supervivencia 
+                            desarrollado por EA Redwood Shores y distribuido por 
+                            Electronic Arts. Es el primer título de la serie Dead Space, 
+                            franquicia que incluye videojuegos, cómics y películas.
+                        </p>
+                    </div>
+                    <div class="Product-img">
+                        <!-- Imagen del producto -->
+                        <img src="imagenes/deadspace.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Botón de compra -->
+                <a href="#" class="btn-1">comprar</a>
+            </div>
+
+            <!-- Repetir estructura para otras diapositivas del carrusel -->
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="imagenes/logogd.webp" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="Product-content">
+                    <div class="Product-txt">
+                        <span>$150.000</span>
+                        <h3>Jack single</h3>
+                        <p>Alien: Isolation es un videojuego de terror tipo horror de supervivencia y sigilo en 
+                            primera persona​ desarrollado por The Creative Assembly y publicado por Sega 
+                        </p>
+                    </div>
+                    <div class="Product-img">
+                        <img src="imagenes/alien.webp" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">comprar</a>
+            </div>
+
+            <!-- Más diapositivas aquí... -->
+
+        </div>
+    </div>
+    
+    <!-- Enlace a la librería de Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Inicialización de Swiper.js para el carrusel
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow", // Efecto de transición
+            grabCursor: true, // Cursor de agarre al pasar sobre el carrusel
+            centeredSlides: true, // Centra las diapositivas activas
+            slidesPerview: "auto", // Número de diapositivas visibles
+            loop: true, // Hacer que el carrusel sea infinito
+            coverflowEffect: {
+                depth:500, // Profundidad del efecto coverflow
+                modifer:1, // Modificador del efecto
+                slidesShadows: true, // Añadir sombras a las diapositivas
+                rotate: 0, // Rotación de las diapositivas
+                stretch: 0, // Estiramiento de las diapositivas
+            }
+        })
+    </script>
+</body>
+</html>
